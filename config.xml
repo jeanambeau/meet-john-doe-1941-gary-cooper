@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.imabuilder.bighouse.meetjohndoe1941garycooper" version="1.0.190527" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="com.imabuilder.bighouse.meetjohndoe1941garycooper" version="1.0.190603" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 	<name>Meet John Doe 1941 Gary Cooper</name>
 	<description>A man needing money agrees to impersonate a nonexistent person who said hed be committing suicide as a protest, and a political movement begins.</description>
 	<author email="ambeaujean@gmail.com" href="https://fanaticsshop.info">Jean Ambeau</author>
@@ -90,6 +90,7 @@
 	<plugin name="ionic-plugin-keyboard" />
 	<!-- ./default -->
 	<plugin name="cordova-plugin-dialogs" />
+	<plugin name="cordova-disable-http-cache" />
 	<plugin name="cordova-plugin-inappbrowser" />
 	<platform name="android">
 		<icon qualifier="ldpi" src="www/res/icon/android/ldpi-icon.png" />
@@ -109,5 +110,9 @@
 	</platform>
 	<platform name="ios">
 	</platform>
-	<preference name="phonegap-version" value="cli-8.0.0" />
+	<preference name="android-build-tool" value="gradle" />
+<preference name="phonegap-version" value="cli-7.1.0" />
+<plugin name="cordova-plugin-admobpro" source="npm">
+<variable name="PLAY_SERVICES_VERSION" value="16.0.0" />
+</plugin>
 </widget>
